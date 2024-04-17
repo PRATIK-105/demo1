@@ -1,38 +1,119 @@
-.App {
+/* styles.css */
+
+.profile-container {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-heading {
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 5px; /* Adjust bottom margin */
+  margin-top: 0; /* Remove top margin */
+  text-align: center;
+  margin-left:25;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile-description {
+  font-size: 1.2em;
+  text-align: center;
+  color: #666;
+  margin-top: 5px; /* Adjust top margin */
+  margin-bottom: 20px; /* Adjust bottom margin */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  background-color: #f0f0f0;
+  padding: 10px;
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 700px; /* Add maximum width */
+  margin: auto; /* Center horizontally */
+}
+
+
+
+.flex-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.row {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px; /* Adjust padding */
+  margin: 10px;
+  max-width: 300px; /* Adjust max-width */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-card img {
+  display: block;
+  margin: 0 auto 10px;
+  width: 100%; /* Adjust image width */
+  max-width: 220px; /* Add max-width */
+  height: auto; /* Allow height to adjust */
+  border-radius: 50%;
 }
+
+.profile-card h2 {
+  font-weight: bold;
+}
+
+.profile-card .explore-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-card .explore-button:hover {
+  background-color: #333;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-300 {
+  width: 300px;
+}
+
+.dark .prose-dark {
+  color: #fff;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 600px */
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .profile-heading {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+
+  .profile-description {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+  
+  /* Add more styles as needed for smaller screens */
+}
+
